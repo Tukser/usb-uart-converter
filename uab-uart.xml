@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>D:\workspace\kicad\usb-uart\uab-uart.sch</source>
+    <date>08.06.2018 20:32:03</date>
+    <tool>Eeschema 4.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>uab-uart.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="D1">
+      <value>CH340G</value>
+      <footprint>Housings_SSOP:SOP-16_4.4x10.4mm_Pitch1.27mm</footprint>
+      <libsource lib="74xx" part="CH340G"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B1A81C9</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>10n</value>
+      <footprint>Capacitors_SMD:C_1206</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B1A8574</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>USB_B</value>
+      <footprint>Connectors:USB_B</footprint>
+      <libsource lib="conn" part="USB_B"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B1A8D0B</tstamp>
+    </comp>
+    <comp ref="Y1">
+      <value>Crystal</value>
+      <footprint>Crystals:Crystal_SMD_HC49-SD</footprint>
+      <libsource lib="device" part="Crystal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B1A8ED9</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>22p</value>
+      <footprint>Capacitors_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B1A8FAC</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>22p</value>
+      <footprint>Capacitors_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B1A9060</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x08</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x08_Pitch1.27mm</footprint>
+      <libsource lib="conn" part="Conn_01x08"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B1A9146</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="74xx" part="CH340G">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">CH340G</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="input"/>
+        <pin num="2" name="TXD" type="input"/>
+        <pin num="3" name="RXD" type="input"/>
+        <pin num="4" name="V3" type="input"/>
+        <pin num="5" name="D+" type="input"/>
+        <pin num="6" name="D-" type="input"/>
+        <pin num="7" name="XI" type="input"/>
+        <pin num="8" name="XO" type="input"/>
+        <pin num="9" name="CTS" type="input"/>
+        <pin num="10" name="DSR" type="input"/>
+        <pin num="11" name="RI" type="input"/>
+        <pin num="12" name="DCD" type="input"/>
+        <pin num="13" name="DTR" type="input"/>
+        <pin num="14" name="RTS" type="input"/>
+        <pin num="15" name="RS232" type="input"/>
+        <pin num="16" name="VCC" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C_Small">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Conn_01x08">
+      <description>Generic connector, single row, 01x08</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x08</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Crystal">
+      <description>Two pin crystal</description>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="USB_B">
+      <description>USB Type B connector</description>
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB_B</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="power_out"/>
+        <pin num="2" name="D-" type="passive"/>
+        <pin num="3" name="D+" type="passive"/>
+        <pin num="4" name="GND" type="power_out"/>
+        <pin num="5" name="Shield" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>C:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
+    </library>
+    <library logical="74xx">
+      <uri>C:\Program Files\KiCad\share\kicad\library\74xx.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Earth">
+      <node ref="C1" pin="2"/>
+      <node ref="J1" pin="4"/>
+      <node ref="D1" pin="1"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C3" pin="2"/>
+    </net>
+    <net code="2" name="Net-(C3-Pad1)">
+      <node ref="D1" pin="8"/>
+      <node ref="C3" pin="1"/>
+      <node ref="Y1" pin="2"/>
+    </net>
+    <net code="3" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1"/>
+      <node ref="Y1" pin="1"/>
+      <node ref="D1" pin="7"/>
+    </net>
+    <net code="4" name="+5V">
+      <node ref="D1" pin="16"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="5" name="Net-(D1-Pad10)">
+      <node ref="J2" pin="7"/>
+      <node ref="D1" pin="10"/>
+    </net>
+    <net code="6" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="7" name="Net-(D1-Pad3)">
+      <node ref="J2" pin="2"/>
+      <node ref="D1" pin="3"/>
+    </net>
+    <net code="8" name="Net-(D1-Pad14)">
+      <node ref="J2" pin="3"/>
+      <node ref="D1" pin="14"/>
+    </net>
+    <net code="9" name="Net-(D1-Pad13)">
+      <node ref="J2" pin="4"/>
+      <node ref="D1" pin="13"/>
+    </net>
+    <net code="10" name="Net-(D1-Pad12)">
+      <node ref="J2" pin="5"/>
+      <node ref="D1" pin="12"/>
+    </net>
+    <net code="11" name="Net-(D1-Pad11)">
+      <node ref="D1" pin="11"/>
+      <node ref="J2" pin="6"/>
+    </net>
+    <net code="12" name="Net-(D1-Pad9)">
+      <node ref="D1" pin="9"/>
+      <node ref="J2" pin="8"/>
+    </net>
+    <net code="13" name="Net-(D1-Pad15)">
+      <node ref="D1" pin="15"/>
+    </net>
+    <net code="14" name="Net-(D1-Pad5)">
+      <node ref="D1" pin="5"/>
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="15" name="Net-(D1-Pad6)">
+      <node ref="D1" pin="6"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="16" name="Net-(J1-Pad5)">
+      <node ref="J1" pin="5"/>
+    </net>
+    <net code="17" name="+3V3">
+      <node ref="D1" pin="4"/>
+      <node ref="C2" pin="1"/>
+    </net>
+  </nets>
+</export>
